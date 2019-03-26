@@ -13,8 +13,9 @@ import javax.persistence.Id;
     private String articleNo;
     private long bestand;
 
-    public Article(String articleNo){
+    public Article(String articleNo, long bestand){
         this.articleNo = articleNo;
+        this.bestand = bestand;
     }
 
     public void setBestand(long bestand){
@@ -25,4 +26,11 @@ import javax.persistence.Id;
         return this.bestand;
     }
 
+    public String getArticleNo(){
+        return this.articleNo;
+    }
+
+    public void setArticleNo(String articleNo) {
+        this.articleNo = articleNo;
+    }
 }
